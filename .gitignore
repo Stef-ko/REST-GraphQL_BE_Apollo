@@ -6,6 +6,6 @@
 .pnp.js
 
 # db
-config.js
+# config.js
 
 /functions/bundle
