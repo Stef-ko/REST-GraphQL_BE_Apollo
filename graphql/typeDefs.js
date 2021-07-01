@@ -22,7 +22,7 @@ module.exports = gql`
     getPosts: [Post]
   }
   type Mutation {
-    createPost(body: String!): Post!
+    createPost(body: String!, username: String!): Post!
     deletePost(postId: ID!): String!
     updatePost(postId: ID!, body: String!): Post!
   }
