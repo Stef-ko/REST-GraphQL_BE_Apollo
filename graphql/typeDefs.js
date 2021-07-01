@@ -1,11 +1,11 @@
-const { gql } = require("apollo-server");
+const { gql } = require('apollo-server')
 
 module.exports = gql`
   type Post {
     id: ID!
     body: String!
     createdAt: String!
-    username: String
+    username: String!
   }
   type Comment {
     id: ID!
@@ -26,4 +26,4 @@ module.exports = gql`
     deletePost(postId: ID!): String!
     updatePost(postId: ID!, body: String!): Post!
   }
-`;
+`
